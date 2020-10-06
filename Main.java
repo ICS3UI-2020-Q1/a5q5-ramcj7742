@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
- *
- * @author 
+ * Prints a row of astericks the length of user chosing between 1 and 10
+ * @author Jaden Ramcharan
  */
 public class Main {
 
@@ -9,7 +10,16 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
-    
+    // creates scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    //gets number from user
+    System.out.println("Please enter a number between 1 and 10");
+    int userNum = input.nextInt();
+
+    //loop that prints desired amount of astericks
+    for(int i = 0; i < userNum; i++){
+      System.out.print(" * ");
+    }
   }
 }
